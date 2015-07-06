@@ -4,3 +4,8 @@ DWS2 - Wk1 Web Design - Gamer Station
 7/6/2015
 */
 
+body {
+    font-size: 100%;
+    font-family: "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+}
+
