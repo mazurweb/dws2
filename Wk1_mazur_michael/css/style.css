@@ -4,8 +4,61 @@ DWS2 - Wk1 Web Design - Gamer Station
 7/6/2015
 */
 
+/* Main Body Styles */
 body {
     font-size: 100%;
     font-family: "Helvetica Neue", Arial, Helvetica, Sans-Serif;
+    width: 100%; /*1154.47px */
+    margin: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+    background: #2566C0; /* Old browsers */
+}
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
+/* Header CSS */
+header {
+    margin-top: 25px;
+    border-bottom: .1em solid #929292;
+    background: #f8f8f8;
+    overflow: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+header > a {
+    float: left;
+    margin-left: 2.16549586%; /* 25px / 1154.47px */
+}
+header nav {
+    float: right;
+    margin-top: 55px;
+    margin-right: 2.16549586%; /* 25px / 1154.47px */
+}
+
+/* Nav CSS */
+
+nav {
+
+}
+nav ul:nth-child(1){
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    padding-left: 2.16549586em;
+    padding-right: 2.16549586em;
+}
+nav li a{
+    text-decoration: none;
+    color: #565656;
+}
+nav li a:hover {
+    color: #2566C0;
+}
+nav li a:active {
+    color :#ccc
+}
