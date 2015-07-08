@@ -62,3 +62,22 @@ nav li a:hover {
 nav li a:active {
     color :#ccc
 }
+
+/*Main Content */
+#content {
+    overflow: auto;
+    background: #f8f8f8;
+}
+section {
+    width: 62.5%;
+    float: left;
+}
+aside {
+    width: 35.9375%;
+    margin-left: 1.5625%;
+    float:right;
+}
+aside img:first-child{
+    background: #f8f8f8;
+    border-radius: 50%;
+}
