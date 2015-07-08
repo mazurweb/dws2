@@ -14,19 +14,23 @@ body {
     background: #2566C0; /* Old browsers */
 }
 #wrapper {
-    width: 100%
-    margin: 0 auto;
+    width: 100%;
+    margin: 25px auto;
     overflow: hidden;
-}
-
-/* Header CSS */
-header {
-    margin-top: 25px;
-    border-bottom: .1em solid #929292;
     background: #f8f8f8;
-    overflow: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+#content {
+    overflow: auto;
+    width: 93.75%;
+    margin: 0 auto;
+}
+/* Header CSS */
+header {
+    border-bottom: 3px solid #BCBCBC;
+    background: #f8f8f8;
+    overflow: auto;
 }
 header > a {
     float: left;
@@ -37,7 +41,9 @@ header nav {
     margin-top: 55px;
     margin-right: 2.16549586%; /* 25px / 1154.47px */
 }
-
+img[src="img/GS_Logo.png"] {
+    max-width: 100%;
+}
 /* Nav CSS */
 
 nav {
@@ -63,11 +69,8 @@ nav li a:active {
     color :#ccc
 }
 
-/*Main Content */
-#content {
-    overflow: auto;
-    background: #f8f8f8;
-}
+/*About Us Section */
+
 section {
     width: 62.5%;
     float: left;
@@ -88,4 +91,8 @@ aside img:first-child{
 }
 h2[class="about-h2"] {
     font-size: 26px;
+    color: #163D72;
+}
+#about {
+    margin-top: 25px;
 }
