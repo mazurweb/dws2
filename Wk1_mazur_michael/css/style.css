@@ -40,23 +40,21 @@ header nav {
     float: right;
     margin-top: 55px;
     margin-right: 2.16549586%; /* 25px / 1154.47px */
+    width: 31.25%; /* 300 / 960 */
 }
 img[src="img/GS_Logo.png"] {
     max-width: 100%;
 }
 /* Nav CSS */
-
-nav {
-
-}
 nav ul:nth-child(1){
     margin: 0;
     padding: 0;
 }
 nav li {
-    display: inline;
-    padding-left: 2.16549586em;
-    padding-right: 2.16549586em;
+    display: inline-block;
+    padding-left: 8.15493063%;
+    padding-right: 8.15493063%;
+    float: left;
 }
 nav li a{
     text-decoration: none;
