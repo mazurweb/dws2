@@ -26,6 +26,18 @@ body {
     width: 93.75%;
     margin: 0 auto;
 }
+h2 {
+    font-size: 26px;
+    color: #163D72;
+}
+section {
+    padding-left: 2.605%;
+    padding-right: 2.605%;
+}
+aside {
+    margin-right: 2.605%;
+    margin-top: 25px;
+}
 /* Header CSS */
 header {
     border-bottom: 3px solid #BCBCBC;
@@ -68,14 +80,14 @@ nav li a:active {
 }
 
 /*About Us Section */
-
-section {
+#about {
+    overflow: auto;
+}
+#about section {
     width: 62.5%;
     float: left;
-    padding-left: 2.605%;
-    padding-right: 2.605%;
 }
-aside {
+#about aside {
     width: 29.125%;
     float: right;
     margin-right: 2.605%;
@@ -87,10 +99,16 @@ aside img:first-child{
     max-width: 100%;
 
 }
-h2[class="about-h2"] {
-    font-size: 26px;
-    color: #163D72;
-}
+
 #about {
     margin-top: 25px;
+}
+
+/* Products Section */
+#products div {
+    overflow: auto;
+    width: 100%;
+}
+#products div.mice, div.keyboards, div.headsets, div.mousepads {
+    width: 45%;
 }
