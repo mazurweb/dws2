@@ -47,6 +47,8 @@ ul.nav.nav-pills li a:hover {
 /*About Section */
 #about {
     margin-top: 50px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ccc;
 }
 #about h2:first-child {
     margin-top: 0;
@@ -58,7 +60,11 @@ ul.nav.nav-pills li a:hover {
 }
 
 /* Our Hedgies Section*/
-
+#hedgies {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ccc;
+}
 #hedgies table {
     background: #f8f8f8;
     color: #5e5e5e;
@@ -80,6 +86,18 @@ ul.nav.nav-pills li a:hover {
 #hedgies table td i {
     font-size: 22px;
 }
+#hedgies img {
+    border-radius: 100%;
+    border: 5px solid;
+    margin: 0 auto;
+}
+#hedgies h2 {
+    margin-bottom: 25px;
+}
+.hedgies {
+    padding-left: 0;
+}
+
 /* Contact Form CSS*/
 form#contact-form {
     margin-left: 1.5%;
@@ -140,6 +158,12 @@ input[type="submit"]:hover {
     }
     input[type="submit"] {
         width: 100%;
+    }
+    #hedgies {
+        text-align: center;
+    }
+    .hedgies div {
+        margin-bottom: 25px;
     }
 }
 @media (max-width: 649px) {
