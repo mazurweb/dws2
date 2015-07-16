@@ -11,7 +11,6 @@
 <div id="wrapper">
     <div class="container">
         <header class="clearfix">
-            <!-- Where the logo will  go -->
             <div class="logo">
                 <a href="#">
                     <img src="images/Hedgie-World-Logo-light.png">
@@ -27,25 +26,50 @@
             </nav>
         </header>
         <div id="about" class="clearfix">
-            <h2>About Hedgie World</h2>
-             <article class="col-md-8">
-                <p>testtestestsetsetsetsetset</p>
-            </article>
-            <aside class="col-md-3 col-md-offset-1">
-                <p>testtestsetsetsetsetset</p>
+            <aside class="col-md-4 pull-right">
+                <img class="img-responsive" src="images/hedgehog.jpg"/>
             </aside>
+            <article class="col-md-8 pull-left">
+                <h2>About Hedgie World</h2>
+                <p style="margin-top: 25px;">Hedgie World is one of the finest Hedgehog breeding locations located in the United States.  We have a variety of hedgehogs available that come in all different shapes and sizes.</p>
+                <p>We take pride in the way we breed our hedgehogs to provide our customers with a well tempered and healthy hedgehog.  We also take the initiative and offer peace of mind and provide the essential start up kits needed to care for your wonderful hedgie!</p>
+                <p>Please take a look below at the available hedgies that you can take home today!  Always check back to see if we have different genders or any colors that you may be looking for in a hedgehog.</p>
+             </article>
+
         </div>
         <div id="hedgies">
-            <h2>Our Hedgies</h2>
-            <article>
+            <article class="col-md-12">
+                <h2>Our Hedgies</h2>
                 <div class="col-md-3 col-xs-6"></div>
                 <div class="col-md-3 col-xs-6"></div>
                 <div class="col-md-3 col-xs-6"></div>
                 <div class="col-md-3 col-xs-6"></div>
             </article>
         </div>
-        <div id="contact">
+        <div id="contact" class="col-md-12">
             <h2>Contact Us</h2>
+            <p>If interested in any of our hedgehogs that are available please fill out the form below!</p>
+            <form id="contact-form" class="form-horizontal">
+                <div class="form-group">
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="sr-only">Phone</label>
+                    <input type="tel" id="phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <label for="comments" class="sr-only">Comments</label>
+                    <textarea id="comments" placeholder="Comments" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </form>
         </div>
     </div>
 </div>

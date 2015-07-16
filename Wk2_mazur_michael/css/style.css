@@ -11,17 +11,24 @@ body {
     color: #e8e8e8;
 }
 .container {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 /*Header/Nav Section */
 header {
     margin-bottom: 15px;
     border-bottom: 3px solid #ccc;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
+    margin-left: -100%;
+    margin-right: -100%;
+    padding-left: 100%;
+    padding-right: 100%;
 }
 .logo {
     float: left;
+}
+.logo img:hover {
+    opacity: .9;
 }
 nav.navbar.navbar-right.menu {
     margin-top: 30px;
@@ -33,3 +40,32 @@ ul.nav.nav-pills li a:hover {
     color: #5e5e5e;
     background: #e8e8e8;
 }
+
+
+/* Body Sections CSS*/
+
+/*About Section */
+#about {
+    margin-top: 50px;
+}
+#about h2:first-child {
+    margin-top: 0;
+}
+#about aside img {
+    border-radius: 100%;
+    border: 5px solid;
+    margin-top: 15px;
+}
+
+/* Contact Form CSS*/
+form#contact-form {
+    margin-left: 1.5%;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 35%;
+    color: #5e5e5e!important;
+}
+input[type="submit"] {
+    color: #5e5e5e;
+}
+/* Media Queries */
