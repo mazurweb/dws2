@@ -8,6 +8,42 @@ Michael Mazur
 /* Main CSS */
 
 #wrapper {
-    margin: 0;
+    margin-top: 20px;
     padding: 0;
+}
+
+/* Header CSS */
+header {
+    overflow: auto;
+    margin-bottom: 15px;
+}
+.logo {
+    float: left;
+}
+.logo a img {
+    max-width: 100%;
+}
+nav {
+    float: right;
+    margin-top: 45px;
+}
+nav ul li {
+    display: inline;
+    padding: 0 15px;
+    border-right: 1px solid #ccc;
+}
+nav ul li a {
+    text-decoration: none;
+}
+/* Slider CSS*/
+
+.slider {
+    margin-left: -100%;
+    margin-right: -100%;
+    padding-left: 100%;
+    padding-right: 100%;
+    background-image: url('../images/Slider-bg.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
