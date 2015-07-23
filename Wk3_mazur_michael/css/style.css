@@ -11,7 +11,9 @@ Michael Mazur
     margin-top: 20px;
     padding: 0;
 }
-
+img {
+    max-width: 100%;
+}
 /* Header CSS */
 header {
     overflow: auto;
@@ -46,4 +48,15 @@ nav ul li a {
     height: 500px;
     background-repeat: no-repeat;
     background-position: 50%;
+}
+
+/*Services Section */
+#services {
+    margin-top: 50px;
+}
+#services div h5 {
+    text-align: center;
+}
+#services div p, #services div a {
+    text-align: left;
 }
