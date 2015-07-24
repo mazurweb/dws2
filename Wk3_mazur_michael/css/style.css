@@ -60,3 +60,67 @@ nav ul li a {
 #services div p, #services div a {
     text-align: left;
 }
+#services img {
+    width: 100%;
+}
+
+/* Why Us Section */
+#why {
+    margin-top: 25px;
+}
+#why .five {
+    margin-left: 0;
+}
+#why .seven table {
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+}
+#why .seven table td {
+    padding-left: 5px;
+}
+#why .seven table th {
+    background: #33C3F0;
+    color: #fff;
+}
+#why .seven table th:nth-child(2), #why .seven table th:nth-child(3){
+    padding-left: 0px;
+}
+
+/* Contact Us Section */
+#contact {
+    margin-top: 25px;
+}
+#contact input[type="submit"]{
+    background: #33C3F0;
+    color: #fff;
+    border: none;
+}
+
+/* Media Queries */
+@media (max-width: 606px){
+    .slider {
+        display:  none;
+    }
+    header {
+        text-align: center;
+    }
+    .logo {
+        float: none;
+    }
+    nav {
+        float: none;
+    }
+
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+@media (max-width: 549px) {
+    #services button {
+        width: 100%;
+    }
+    #services .columns {
+        margin-bottom: 25px;
+    }
+}
