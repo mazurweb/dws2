@@ -8,9 +8,14 @@ MMMMMMMMM ICE CREAMMMMMMM
 
 
 /* Main CSS */
+html {
+    padding: 0;
+    margin: 0;
+}
 body {
+    height: 100%;
     font-size: 100%;
-    font-family: Arial sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -41,30 +46,38 @@ header {
     margin-right: -100%;
     padding-left: 100%;
     padding-right: 100%;
-    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 3px rgba(0,0,0,.2);
 }
 
 /* Nav CSS */
 nav {
     float: right;
     margin-top: 65px;
-    width: 31.25%;
+    width: 45%;
 }
 nav ul {
     padding: 0;
     margin: 0;
-    float: right;
-    width: 100%;
 }
 nav ul li {
     display: inline-block;
-    padding-left: 8.15493063%;
-    padding-right: 8.15493063%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
     float: left;
 }
 nav ul li a {
     text-decoration: none;
     color: #565656;
+    font-size: 1.125em;
+}
+nav ul li a:active {
+    color: #89C6DF;
+    font-weight: 600;
+}
+nav ul li a:hover {
+    color: #89C6DF;
 }
 
 /* Slider CSS */
@@ -73,4 +86,14 @@ nav ul li a {
     margin-right: -100%;
     padding-left: 100%;
     padding-right: 100%;
+}
+
+
+/* Footer CSS */
+footer {
+    padding-left: 100%;
+    padding-right: 100%;
+    margin-left: -100%;
+    margin-right: -100%;
+    background: #ccc;
 }
