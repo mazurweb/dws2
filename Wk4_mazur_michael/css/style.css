@@ -13,7 +13,7 @@ html {
     margin: 0;
 }
 body {
-    height: 100%;
+    overflow-x: hidden;
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
@@ -86,14 +86,258 @@ nav ul li a:hover {
     margin-right: -100%;
     padding-left: 100%;
     padding-right: 100%;
+    background-image: url('../images/slider-bg.jpg');
+    background-position: 10% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+.slider-content {
+    float: left;
+    width: 30%;
+    margin-top: 20px;
+}
+.slider-content h1 {
+    color: #9FFF70;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.slider-content h3 {
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.slider-content p {
+    color: #424242;
+}
+.fotm-btn {
+    background: #fcfcfc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcfcfc 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcfcfc 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcfcfc 0%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcfcfc 0%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fcfcfc 0%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    color: #89C6DF;
+    text-shadow: 1px 1px rgba(0,0,0,.3);
+}
+.fotm-btn:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+0,c9c9c9+100 */
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #efefef 0%, #c9c9c9 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#c9c9c9)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #efefef 0%,#c9c9c9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #efefef 0%,#c9c9c9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #efefef 0%,#c9c9c9 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #efefef 0%,#c9c9c9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#c9c9c9',GradientType=0 ); /* IE6-9 */
+}
+.slider-img {
+    width: 60%;
+    float: right;
+}
+.slider-img img {
+    max-width: 100%;
+    margin-left: 90px;
 }
 
-
+/* About CSS */
+#about {
+    width: 70%;
+    float: left;
+}
+#about h2 {
+    margin-top: 50px;
+}
+.about-img {
+    width: 30%;
+    float: right;
+}
+.about-img img {
+    max-width: 100%;
+    margin-top: 25px;
+    float: right;
+}
+/* Contact CSS */
+#contact {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+/* FOTM CSS */
+#fotm {
+    clear: both;
+}
+.flavor {
+    width: 33.33333333%;
+    float: left;
+}
+.flavor img {
+    max-width: 100%;
+}
+.row {
+    overflow: auto;
+}
+figcaption {
+    text-align: center;
+}
+/* Form CSS */
+form {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+form div {
+    margin-bottom: 15px;
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+    width: 50%;
+}
+textarea {
+    min-height: 100px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 /* Footer CSS */
 footer {
     padding-left: 100%;
     padding-right: 100%;
     margin-left: -100%;
     margin-right: -100%;
-    background: #ccc;
+    background: #565656;
+    overflow: auto;
+}
+.copyright p {
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.social-media {
+    float: right;
+    margin-top: 15px;
+}
+.copyright {
+    display: block;
+    float: left;
+}
+.social-media ul {
+    padding: 0;
+    margin: 0;
+}
+.social-media ul li {
+    display: inline;
+}
+.social-media li a img:hover {
+    opacity: .6;
+}
+
+/* Responsive Media Queries */
+
+    /* Tablet Portrait to 960 */
+@media screen and (max-width: 959px) {
+    #logo {
+        float: none;
+    }
+    #logo img {
+        width: initial;
+    }
+    .about-img img {
+        max-width: 100%;
+        top: 50px;
+        float: right;
+        position: relative;
+    }
+    .slider {
+        display: none;
+    }
+    .container {
+        width: 90%;
+    }
+    header > a {
+        float: none;
+        margin: 0;
+    }
+    header {
+        text-align: center;
+    }
+    header nav {
+        overflow: auto;
+        margin: 25px auto;
+        width: 65%;
+        float: none;
+    }
+    nav li {
+        display: inline-block;
+        float: left;
+    }
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="text"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="password"],
+    textarea,
+    select {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    header nav {
+        width: 100%;
+    }
+    .about-img img {
+        display: none;
+    }
+    #about {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .flavor {
+        width: 100%;
+    }
+    .flavor figure {
+        text-align: center;
+    }
+    .flavor figure img {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+    .social-media {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .fotm-btn {
+        width: 100%;
+    }
 }
